@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+/* 
+  Ashim Adhakari = 104104333 
+  */
+
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Audit from "./pages/Audit";
+import Report from "./pages/Report";
+import Signin from "./pages/Signin";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/audit" element={<Audit/>} />
+          <Route path="/Report" element={<Report/>} />
+          <Route path="/signin" element={<Signin/>} />
+          
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

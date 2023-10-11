@@ -1,0 +1,212 @@
+/* 
+Ashim Adhakari = 104104333
+Prabesh Bhattarai = 104085535
+ */
+
+
+
+
+ /* Animation */
+
+/* Styles for the hero section */
+.hero {
+  background: #134E5E; /* Fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71B280, #134E5E); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  height: 100vh; /* 100% of the viewport height */
+  overflow: hidden; /* Hide overflow content */
+  font-family: monospace; /* Set font-family for text */
+}
+
+/* Styles for the hero title */
+.hero__title {
+  color: #fff; /* Text color */
+  position: absolute;
+  top: 50%; /* Position vertically at 50% of the parent container */
+  left: 50%; /* Position horizontally at 50% of the parent container */
+  transform: translate(-50%, -50%); /* Center the text both vertically and horizontally */
+  text-align: center; /* Center-align text */
+  font-size: 50px; /* Font size */
+  z-index: 1; /* Layering - appear above other elements */
+}
+
+/* Styles for animated cubes */
+.cube {
+  position: absolute; /* Positioning relative to the parent container */
+  top: 80vh; /* Position vertically at 80% of the viewport height */
+  left: 45vw; /* Position horizontally at 45% of the viewport width */
+  width: 10px; /* Width of the cube */
+  height: 10px; /* Height of the cube */
+  border: solid 1px #23468a; /* Border with color */
+  transform-origin: top left; /* Set the transformation origin */
+  transform: scale(0) rotate(0deg) translate(-50%, -50%); /* Initial transformation properties */
+  -webkit-animation: cube 12s ease-in forwards infinite; /* Webkit-specific animation properties */
+  animation: cube 12s ease-in forwards infinite; /* Animation properties */
+}
+
+/* Alternate coloring for cubes */
+.cube:nth-child(2n) {
+  border-color: #29838b;
+}
+
+/* Position and animation delays for individual cubes */
+.cube:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  -webkit-animation-delay: 8s;
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+/* Keyframe animations for cubes */
+@-webkit-keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%); /* Initial properties */
+    opacity: 1; /* Full opacity */
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%); /* Final properties */
+    opacity: 0; /* Fade out */
+  }
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%); /* Initial properties */
+    opacity: 1; /* Full opacity */
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%); /* Final properties */
+    opacity: 0; /* Fade out */
+  }
+}
+
+
+/* Styles for the container */
+
+/* Styles for the h1 element */
+h1 {
+  text-align: center;
+  justify-content: center;
+  font-size: 24px; /* Font size for the heading */
+}
+
+/* Styles for labels */
+label {
+   /* Font size for labels */
+  display: block; /* Make labels display as block elements */
+  margin-bottom: 10px; /* Margin below each label */
+}
+
+/* Styles for file input */
+input[type='file'] {
+  display: none; /* Hide the file input */
+}
+
+/* Styles for the custom file upload button */
+.custom-file-upload {
+  border: 1px solid #ccc; /* Border for the custom button */
+  display: inline-block; /* Display as inline-block */
+  padding: 6px 10px; /* Padding for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  background: #1f4037;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff; /* Text color */
+  border: none; /* Rounded corners */
+  text-decoration: none;
+  
+}
+
+/* Hover styles for the custom file upload button */
+.custom-file-upload:hover {
+  font-size: 15px;
+  transition: 0.3s;
+  
+}
+
+/* Styles for the file name display */
+#file-name {
+  margin-top: 10px; /* Margin above the file name */
+}
+
+.background-audit {
+  background: #134E5E; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71B280, #134E5E); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+   height: 100vh;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+.container-audit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center content vertically on mobile */
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.493); /* Background color with opacity */
+  padding: 50px 40px;
+  box-shadow: 0 0 20px rgb(85, 79, 79); /* Box shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+.submit{
+  border: none;
+  background-color: #4a95a0;
+}
+.submit:hover{
+  background-color: #358d48;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.check-history{
+  flex-direction: column;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  
+}
+.history{
+  background-color: #4a95a0;
+    border:none;
+
+}
+
+.history:hover{
+  background-color: #358d48;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+

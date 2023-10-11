@@ -1,0 +1,43 @@
+ /*Prabesh Bhattarai = 104085535 */
+
+/* Navigation menu for larger screens */
+.navigation-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling for navigation menu items */
+.navigation-menu li {
+  margin: 0px 20px; /* Spacing between menu items */
+}
+
+/* Styling for navigation menu links */
+.navigation-menu li a {
+  text-decoration: none; /* Remove underlines from links */
+  color: rgb(255, 255, 255) !important; /* Set link color to white and use !important to override other styles */
+}
+
+/* Styling for the "active" menu item (currently selected page) */
+.active {
+  color: rgb(255, 255, 255) !important; /* Set color for active item */
+  font-weight: bold !important; /* Make active item text bold */
+}
+
+/* Mobile view menu */
+.mobile-navigation {
+  list-style: none; /* Remove default list bullets */
+}
+
+/* Styling for mobile menu items */
+.mobile-navigation li {
+  margin-top: 20px; /* Spacing between mobile menu items */
+}
+
+/* Styling for mobile menu links */
+.mobile-navigation li a {
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 1.4rem; /* Set font size for mobile menu links */
+  color: rgb(9, 99, 132) !important; /* Set link color for mobile menu and use !important to override other styles */
+}

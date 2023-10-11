@@ -1,0 +1,169 @@
+/* 
+  Prabesh Bhattarai = 104085535
+  Ashim Adhakari = 104104333 
+    */ 
+
+
+
+
+/* General Styles */
+body {
+  margin: 0;
+  /* Background image with animation */
+  background: url('hacker.gif') center fixed;
+  background-size: i;
+  animation: backgroundAnimation 20s infinite alternate;
+  font-family: 'Courier New', Courier, monospace;
+  scroll-behavior: smooth;
+}
+
+/* Styles for a special page with a different animation */
+.special-page {
+  animation: backgroundAnimation 5s linear infinite;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Button styles */
+.button {
+  display: flex;
+  border: none;
+  padding: 20px 30px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition-duration: 0.4s;
+  box-shadow: 0 0 10px rgb(142, 146, 144);
+  /* Background gradient */
+  background: #ced4d6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71B280, #134E5E); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Styles for the front section */
+.front {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(255, 254, 254);
+}
+
+#welcome{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #65d965 29%,
+    #6be7ca 67%,
+    #0d7882 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* Styles for links in the front section */
+#link {
+  display: flex;
+  text-decoration: none;
+  font-size: 20px;
+  color: #063546;
+}
+
+/* Hover styles for links in the front section */
+#link:hover {
+  color: #adb8b0;
+  transition: 0.5s;
+}
+
+/* Center the content for the following sections */
+.head_line,
+.intro,
+.approach,
+.get-started {
+  text-align: center;
+}
+
+/* Add spacing between sections */
+.intro,
+.approach,
+.get-started {
+  margin: 2rem 0;
+  color: white;
+}
+
+/* Style headings for the head_line section */
+.head_line h1 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+/* Style headings for the intro section */
+.intro h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Style headings for the approach and get-started sections */
+.approach h2,
+.get-started h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+/* Style paragraphs for the intro, approach, and get-started sections */
+.intro p,
+.approach p,
+.get-started p {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+  color: rgb(233, 222, 202);
+}
+
+/* Ensure a plain white background for the content sections */
+.head_line,
+.intro,
+.approach,
+.get-started {
+  background-color: rgba(37, 63, 67, 0.481);
+  padding: 2rem;
+  color: rgb(215, 212, 212);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(98, 98, 98);
+}
+
+/* Ensure content remains centered horizontally for the content sections */
+.head_line,
+.intro,
+.approach,
+.get-started {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
